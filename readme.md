@@ -6,7 +6,11 @@
 ## টপিকস অনুযায়ী ফোল্ডার এবং কনটেন্ট:
 
 ### 1. প্যাটার্ন প্রশ্ন
-- **1.1**: Awesome Pattern Questions
+- **1.1**: Awesome Pattern Questions 
+- **1.1.1**: Rectangle pattern
+- **1.1.2**: Hollow Rectangle pattern
+- **1.1.3**: Inverted Half Pyramid
+- **1.1.4**: Half Pyramid After 180 Rotation
 - **1.2**: Advanced Pattern Questions
 
 ### 2. সংখ্যা সম্পর্কিত বিষয়
@@ -20,7 +24,8 @@
 - **3.3**: Functions নিয়ে অ্যাডভান্স প্রশ্ন
 
 ### 4. টাইম কমপ্লেক্সিটি
-- **4.1**: টাইম কমপ্লেক্সিটি বোঝা | ডার্ট এ উদাহরণ সহ
+- **4.1**: টাইম কমপ্লেক্সিটি বোঝা 
+- **4.2**: ডার্ট এ উদাহরণ
 
 ### 5. অ্যারে (Arrays)
 - **5.1**: Dart এ অ্যারে পরিচিতি
