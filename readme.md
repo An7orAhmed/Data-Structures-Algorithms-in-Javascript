@@ -47,12 +47,12 @@ OOP প্রোগ্রামিং কৌশল যেখানে ডাট�
   - **1.1.3**: [Inverted Half Pyramid](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.3%20Inverted%20Half%20Pyramid)
   - **1.1.4**: [Half Pyramid After 180 Rotation](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.4%20Half%20Pyramid%20After%20180%20Rotation)
 - **1.2**: Advanced Pattern Questions
-  - **1.2.1**: [inverted pattern (number)]
-  - **1.2.2**: [0-1 pattern]
-  - **1.2.3**: [rhombus pattern]
-  - **1.2.4**: [triangle number pattern]
-  - **1.2.5**: [palindromic pattern]
-  - **1.2.6**: [zig zag pattern]
+  - **1.2.1**: [inverted pattern (number)](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.5%20inverted%20pattern%20(number))
+  - **1.2.2**: [0-1 pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.6%200-1%20pattern)
+  - **1.2.3**: [rhombus pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.7%20rhombus%20pattern)
+  - **1.2.4**: [triangle number pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.8%20triangle%20number%20pattern)
+  - **1.2.5**: [palindromic pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.9%20palindromic%20pattern)
+  - **1.2.6**: [zig zag pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.10%20zig%20zag%20pattern)
 
 ### 2. সংখ্যা সম্পর্কিত বিষয়
 - **2.1**: Binary Number System
