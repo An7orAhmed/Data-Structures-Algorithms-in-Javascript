@@ -7,10 +7,10 @@
 
 ### 1. প্যাটার্ন প্রশ্ন
 - **1.1**: Awesome Pattern Questions 
-- **1.1.1**: Rectangle pattern
-- **1.1.2**: Hollow Rectangle pattern
-- **1.1.3**: Inverted Half Pyramid
-- **1.1.4**: Half Pyramid After 180 Rotation
+  - **1.1.1**: Rectangle pattern
+  - **1.1.2**: Hollow Rectangle pattern
+  - **1.1.3**: Inverted Half Pyramid
+  - **1.1.4**: Half Pyramid After 180 Rotation
 - **1.2**: Advanced Pattern Questions
 
 ### 2. সংখ্যা সম্পর্কিত বিষয়
@@ -30,9 +30,9 @@
 ### 5. অ্যারে (Arrays)
 - **5.1**: Dart এ অ্যারে পরিচিতি
 - **5.2**: লিনিয়ার এবং বাইনারি সার্চ
-- **5.3.1**: সিলেকশন সর্ট
-- **5.3.2**: বাবল সর্ট
-- **5.3.3**: ইনসার্শন সর্ট
+  - **5.3.1**: সিলেকশন সর্ট
+  - **5.3.2**: বাবল সর্ট
+  - **5.3.3**: ইনসার্শন সর্ট
 - **5.4**: অ্যারে চ্যালেঞ্জ
 - **5.5**: টপ কোম্পানির প্রশ্ন
 - **5.6**: সাবঅ্যারে চ্যালেঞ্জ
