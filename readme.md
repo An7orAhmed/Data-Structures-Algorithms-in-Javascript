@@ -6,11 +6,11 @@
 ## টপিকস অনুযায়ী ফোল্ডার এবং কনটেন্ট:
 
 ### 1. প্যাটার্ন প্রশ্ন
-- **1.1**: Awesome Pattern Questions 
-  - **1.1.1**: Rectangle pattern
-  - **1.1.2**: Hollow Rectangle pattern
-  - **1.1.3**: Inverted Half Pyramid
-  - **1.1.4**: Half Pyramid After 180 Rotation
+- **1.1**: [Awesome Pattern Questions](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions)
+  - **1.1.1**: [Rectangle pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.1%20Rectangle)
+  - **1.1.2**: [Hollow Rectangle pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.2%20Hollow%20Rectangle)
+  - **1.1.3**: [Inverted Half Pyramid](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.3%20Inverted%20Half%20Pyramid)
+  - **1.1.4**: [Half Pyramid After 180 Rotation](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.4%20Half%20Pyramid%20After%20180%20Rotation)
 - **1.2**: Advanced Pattern Questions
 
 ### 2. সংখ্যা সম্পর্কিত বিষয়
