@@ -23,9 +23,16 @@ def generate_ai_response(program_title):
             "messages": [
                 {
                   "role": "user", 
-                  "content": f'''Write the JavaScript code for {program_title} 
+                  "content": f'''
+                  Write the JavaScript code for {program_title} 
                   and explain it in Bangla like a friendly tutorial article by Antor Ahmed. 
-                  Split the code and explanation with --$END$--.'''
+                  Split the code and explanation with --$END$--.
+                  before code, write nothing and don't use code block.
+                  example output: 
+                    function add(a, b) => a + b;
+                    --$END$--
+                    explanation in Bangla
+                  '''
                 }
             ]
         })
@@ -60,12 +67,7 @@ def process_subfolders(base_dir):
               js_file_path = os.path.join(root, js_file)
               with open(js_file_path, 'w', encoding='utf-8') as js_f:
                   code_part = ai_response.split('--$END$--', 1)[0]
-                  # Extract the JavaScript code part by removing the markdown code block
-                  md = '```js'
-                  if code_part.find('```javascript') == -1:
-                      md = '```javascript'
-                  cleaned_code = code_part.split(md)[1].split('```')[0].strip()
-                  js_f.write(cleaned_code)
+                  js_f.write(code_part)
 
               # Write explanation to the .md file
               readme_file_path = os.path.join(root, 'readme.md')
