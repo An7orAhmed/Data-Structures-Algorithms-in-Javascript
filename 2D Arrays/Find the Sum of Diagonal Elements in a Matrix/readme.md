@@ -2,8 +2,6 @@
 
 **Author**: Antor Ahmed
 
-### JavaScript Code for Finding the Sum of Diagonal Elements in a Matrix
-
 হ্যালো বন্ধুরা, আজ আমরা একটি ম্যাট্রিক্সের কর্ণ (diagonal) উপাদানগুলোর যোগফল বের করার জন্য একটি JavaScript প্রোগ্রাম লিখব। এই প্রোগ্রামটি খুব সহজ এবং বেসিক লজিকের উপর ভিত্তি করে তৈরি করা হয়েছে। চলুন ধাপে ধাপে বুঝে নেওয়া যাক।
 
 #### ১. ফাংশন ডিক্লেয়ারেশন (Function Declaration)
