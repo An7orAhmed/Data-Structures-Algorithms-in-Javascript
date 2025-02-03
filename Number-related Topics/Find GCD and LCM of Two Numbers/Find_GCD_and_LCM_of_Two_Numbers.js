@@ -1,0 +1,1 @@
+// Find GCD and LCM of Two Numbers JavaScript code goes here.

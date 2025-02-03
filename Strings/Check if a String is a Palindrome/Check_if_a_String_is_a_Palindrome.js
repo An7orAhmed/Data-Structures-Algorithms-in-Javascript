@@ -1,0 +1,1 @@
+// Check if a String is a Palindrome JavaScript code goes here.

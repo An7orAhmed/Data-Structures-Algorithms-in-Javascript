@@ -1,0 +1,1 @@
+// Implement Fenwick Tree for Range Sum Queries JavaScript code goes here.

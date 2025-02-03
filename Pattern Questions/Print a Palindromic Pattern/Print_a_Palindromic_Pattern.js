@@ -1,0 +1,1 @@
+// Print a Palindromic Pattern JavaScript code goes here.

@@ -1,0 +1,1 @@
+// Check if a Number is a Power of 2 JavaScript code goes here.

@@ -1,0 +1,1 @@
+// Check if a Number is Even or Odd using a Function JavaScript code goes here.

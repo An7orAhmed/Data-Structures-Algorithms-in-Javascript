@@ -1,0 +1,1 @@
+// Print an Inverted Half Pyramid JavaScript code goes here.

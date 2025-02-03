@@ -1,0 +1,1 @@
+// Convert Binary to Decimal JavaScript code goes here.

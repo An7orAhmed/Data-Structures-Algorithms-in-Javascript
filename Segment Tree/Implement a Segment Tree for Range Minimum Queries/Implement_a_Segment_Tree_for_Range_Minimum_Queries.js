@@ -1,0 +1,1 @@
+// Implement a Segment Tree for Range Minimum Queries JavaScript code goes here.

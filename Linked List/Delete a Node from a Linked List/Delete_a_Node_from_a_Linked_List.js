@@ -1,0 +1,1 @@
+// Delete a Node from a Linked List JavaScript code goes here.

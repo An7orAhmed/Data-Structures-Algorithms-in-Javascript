@@ -1,0 +1,1 @@
+// Find the kth Smallest Element Using BIT JavaScript code goes here.

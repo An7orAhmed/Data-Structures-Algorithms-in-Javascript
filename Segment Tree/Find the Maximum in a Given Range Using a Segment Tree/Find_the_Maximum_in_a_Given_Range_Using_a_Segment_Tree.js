@@ -1,0 +1,1 @@
+// Find the Maximum in a Given Range Using a Segment Tree JavaScript code goes here.

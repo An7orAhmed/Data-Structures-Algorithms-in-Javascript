@@ -1,173 +1,266 @@
-# ডার্ট দিয়ে ডাটা স্ট্রাকচার এবং এলগরিদম
+# জাভাস্ক্রিপ্ট দিয়ে ডাটা স্ট্রাকচার ও অ্যালগরিদম
 
 ## পরিচিতি
+জাভাস্ক্রিপ্ট প্রোগ্রামিং ভাষার মাধ্যমে ডাটা স্ট্রাকচার ও অ্যালগরিদম শেখার জন্য এই রিপোজিটরিটি তৈরি করা হয়েছে। এখানে প্রতিটি টপিক বিশদভাবে ব্যাখ্যা করা হয়েছে, যাতে তুমি সহজেই বিভিন্ন সমস্যা সমাধানের দক্ষতা অর্জন করতে পারো।
 
-বন্ধুরা, এই রিপোজিটরিতে তুমি ডার্ট প্রোগ্রামিং ভাষার মাধ্যমে ডাটা স্ট্রাকচার এবং এলগরিদমের নানা গুরুত্বপূর্ণ দিক সম্পর্কে জানতে পারবে। এখানে প্রতিটি টপিকের জন্য বিশদ উদাহরণ, চ্যালেঞ্জ, এবং প্রয়োজনীয় ব্যাখ্যা দেওয়া হয়েছে, যা তোমার প্রোগ্রামিং দক্ষতা বাড়াতে সহায়ক হবে। 
+ডাটা স্ট্রাকচার ও অ্যালগরিদম শেখার মাধ্যমে তুমি প্রোগ্রামিং সমস্যার কার্যকর সমাধান তৈরি করতে পারবে, যা তোমার সফটওয়্যার ডেভেলপমেন্ট দক্ষতা আরও উন্নত করবে।
 
-ডার্ট প্রোগ্রামিং ভাষার মাধ্যমে এই বিষয়গুলি শেখার ফলে তুমি দ্রুত এবং কার্যকরভাবে প্রোগ্রামিং সমস্যা সমাধান করতে পারবে এবং উন্নত প্রোগ্রামিং কৌশল অর্জন করবে।
+---
 
-## শুরু করার আগে:
+## শুরু করার পূর্বে
+ডাটা স্ট্রাকচার ও অ্যালগরিদম শেখার আগে কিছু মৌলিক বিষয় সম্পর্কে ধারণা থাকা গুরুত্বপূর্ণ। এগুলো না জানলে, অ্যালগরিদম এবং ডাটা স্ট্রাকচার বোঝা কঠিন হতে পারে।
 
-এই রিপোজিটরির প্রতিটি টপিক শুরু করার আগে কিছু মৌলিক বিষয় সম্পর্কে সুস্পষ্ট ধারণা থাকা অপরিহার্য। এই বিষয়গুলির মৌলিক জ্ঞান না থাকলে, টপিকগুলি বুঝতে এবং প্রয়োগ করতে অসুবিধা হতে পারে। 
+### ১. জাভাস্ক্রিপ্টের মৌলিক ধারণা
+জাভাস্ক্রিপ্ট হলো একটি জনপ্রিয় প্রোগ্রামিং ভাষা যা মূলত ওয়েব ও মোবাইল অ্যাপ ডেভেলপমেন্টে ব্যবহৃত হয়। এর মৌলিক বিষয়গুলোর মধ্যে রয়েছে:
+- **ভেরিয়েবল**: তথ্য সংরক্ষণের জন্য ব্যবহৃত হয়।
+- **কন্ডিশনাল স্টেটমেন্ট**: লজিক্যাল সিদ্ধান্ত গ্রহণে ব্যবহৃত হয়।
+- **লুপ**: নির্দিষ্ট সংখ্যক বার কোড ব্লক এক্সিকিউট করার জন্য ব্যবহৃত হয়।
+- **ফাংশন**: কোড পুনরায় ব্যবহারের জন্য ব্যবহৃত হয়।
+- **ক্লাস**: অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (OOP) এর জন্য ব্যবহৃত হয়।
 
-### 1. ডার্ট প্রোগ্রামিং ভাষার মৌলিক ধারণা:
-ডার্ট একটি আধুনিক প্রোগ্রামিং ভাষা যা বিশেষভাবে ওয়েব এবং মোবাইল অ্যাপ্লিকেশন উন্নয়নের জন্য ডিজাইন করা হয়েছে। এর মৌলিক ধারণাগুলি অন্তর্ভুক্ত করে:
-- **ভেরিয়েবল**: তথ্য সংরক্ষণের জন্য ব্যবহৃত কনটেইনার।
-- **কন্ডিশনাল স্টেটমেন্ট**: লজিক্যাল সিদ্ধান্ত নেওয়ার জন্য ব্যবহৃত।
-- **লুপ**: নির্দিষ্ট সংখ্যক বার কোড ব্লক পুনরাবৃত্তি করার জন্য ব্যবহৃত।
-- **ফাংশন**: কোডের পুনরাবৃত্তি ব্যবস্থাপনার জন্য ব্যবহৃত ব্লক।
-- **ক্লাস**: অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিংয়ের মৌলিক উপাদান, যা অবজেক্ট তৈরি করতে সহায়তা করে।
+### ২. অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP)
+OOP একটি শক্তিশালী প্রোগ্রামিং ধারণা, যা অবজেক্ট ভিত্তিক। এর মৌলিক বিষয়গুলো হলো:
+- **ক্লাস**: অবজেক্ট তৈরির ব্লুপ্রিন্ট।
+- **অবজেক্ট**: ক্লাসের একটি নির্দিষ্ট ইনস্ট্যান্স।
+- **ইনহেরিটেন্স**: একটি ক্লাস অন্য একটি ক্লাসের বৈশিষ্ট্য গ্রহণ করতে পারে।
+- **পলিমরফিজম**: একই মেথড বিভিন্নভাবে প্রয়োগ করা যায়।
 
-### 2. অবজেক্ট-ওরিয়েন্টেড প্রোগ্রামিং (OOP):
-OOP প্রোগ্রামিং কৌশল যেখানে ডাটা এবং ফাংশন একত্রে একটি অবজেক্টের মধ্যে সন্নিবেশিত হয়। এর মৌলিক কনসেপ্টগুলি অন্তর্ভুক্ত করে:
-- **ক্লাস**: অবজেক্ট তৈরি করার জন্য ব্লুপ্রিন্ট।
-- **অবজেক্ট**: ক্লাসের একটি ইনস্ট্যান্স, যা ডাটা এবং মেথড ধারণ করে।
-- **ইনহেরিটেন্স**: একটি ক্লাস অন্য ক্লাস থেকে বৈশিষ্ট্য উত্তরাধিকার সূত্রে গ্রহণ করে।
-- **পলিমরফিজম**: একই মেথডের বিভিন্ন বাস্তবায়ন হতে পারে।
+### ৩. ডাটা স্ট্রাকচার ও অ্যালগরিদমের মৌলিক ধারণা
+ডাটা স্ট্রাকচার হলো তথ্য সংরক্ষণ ও সংগঠনের পদ্ধতি এবং অ্যালগরিদম হলো কোনো সমস্যার সমাধানের জন্য ধাপে ধাপে পরিকল্পিত নির্দেশাবলি। গুরুত্বপূর্ণ বিষয়গুলোর মধ্যে রয়েছে:
+- **অ্যারে (Array)**
+- **লিংকড লিস্ট (Linked List)**
+- **স্ট্যাক (Stack) ও কিউ (Queue)**
+- **ট্রি (Tree) ও গ্রাফ (Graph)**
+- **সার্চিং (Searching) ও সর্টিং (Sorting) অ্যালগরিদম**
 
-### 3. অ্যালগরিদম এবং ডাটা স্ট্রাকচার এর মৌলিক ধারণা:
-অ্যালগরিদম হলো একটি সমস্যার সমাধান করার ধাপে ধাপে পরিকল্পনা, এবং ডাটা স্ট্রাকচার হলো তথ্য সংরক্ষণের পদ্ধতি। মৌলিক ধারণাগুলির মধ্যে অন্তর্ভুক্ত:
-- **লিনিয়ার অ্যালগরিদম**: সোজা লিনিয়ার পদক্ষেপে কাজ করে।
-- **কনস্ট্রাক্টিভ অ্যালগরিদম**: সমস্যা সমাধানের জন্য ধাপে ধাপে কাজ করে, যেমন সর্টিং অ্যালগরিদম।
+### ৪. টাইম কমপ্লেক্সিটি
+অ্যালগরিদমের কার্যকারিতা বোঝার জন্য টাইম কমপ্লেক্সিটি গুরুত্বপূর্ণ। এটি প্রকাশ করা হয় **বিগ-ও নোটেশন** এর মাধ্যমে:
+- **O(1)**: কনস্ট্যান্ট টাইম কমপ্লেক্সিটি।
+- **O(n)**: লিনিয়ার টাইম কমপ্লেক্সিটি।
+- **O(n²)**: কুয়াড্রাটিক টাইম কমপ্লেক্সিটি।
 
-### 4. টাইম কমপ্লেক্সিটি:
-টাইম কমপ্লেক্সিটি হল একটি অ্যালগরিদম কতটুকু কার্যকর তা পরিমাপ করার একটি উপায়। এটি সাধারণত একটি অ্যালগরিদমের কার্যকারিতা বিশ্লেষণ করতে ব্যবহৃত হয়, এবং এর মৌলিক ধারণাগুলি অন্তর্ভুক্ত করে:
-- **ও(1)**: কনস্ট্যান্ট টাইম কমপ্লেক্সিটি।
-- **ও(n)**: লিনিয়ার টাইম কমপ্লেক্সিটি।
-- **ও(n²)**: কুয়াড্রাটিক টাইম কমপ্লেক্সিটি।
+---
 
-এই মৌলিক বিষয়গুলির সুস্পষ্ট ধারণা থাকলে, তুমি ডার্ট ভাষার সাহায্যে ডাটা স্ট্রাকচার এবং এলগরিদমের গভীর ও কার্যকরী ধারণাগুলি সহজে বুঝতে এবং প্রয়োগ করতে পারবে।
+এই মৌলিক বিষয়গুলো ভালোভাবে জানার পর তুমি সহজেই জাভাস্ক্রিপ্ট দিয়ে বিভিন্ন ডাটা স্ট্রাকচার ও অ্যালগরিদম প্রয়োগ করতে পারবে এবং দক্ষ সফটওয়্যার ডেভেলপার হিসেবে নিজেকে গড়ে তুলতে পারবে।
 
 ## টপিকস অনুযায়ী ফোল্ডার এবং কনটেন্ট:
 
-### 1. প্যাটার্ন প্রশ্ন
-- **1.1: Awesome Pattern Questions**
-  - **1.1.1**: [Rectangle pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.1%20Rectangle)
-  - **1.1.2**: [Hollow Rectangle pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.2%20Hollow%20Rectangle)
-  - **1.1.3**: [Inverted Half Pyramid](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.3%20Inverted%20Half%20Pyramid)
-  - **1.1.4**: [Half Pyramid After 180 Rotation](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.4%20Half%20Pyramid%20After%20180%20Rotation)
-- **1.2: Advanced Pattern Questions**
-  - **1.2.1**: [inverted pattern (number)](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.5%20inverted%20pattern%20(number))
-  - **1.2.2**: [0-1 pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.6%200-1%20pattern)
-  - **1.2.3**: [rhombus pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.7%20rhombus%20pattern)
-  - **1.2.4**: [triangle number pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.8%20triangle%20number%20pattern)
-  - **1.2.5**: [palindromic pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.9%20palindromic%20pattern)
-  - **1.2.6**: [zig zag pattern](https://github.com/An7orAhmed/Data-Structures-Algorithms-in-Dart/tree/main/1.%20Pattern%20Questions/1.10%20zig%20zag%20pattern)
+### 1. Pattern Questions  
+  - Print a Rectangle Pattern  
+  - Print a Hollow Rectangle Pattern  
+  - Print an Inverted Half Pyramid  
+  - Print a Half Pyramid After 180° Rotation  
+  - Print an Inverted Number Pyramid  
+  - Print a 0-1 Pattern  
+  - Print a Rhombus Pattern  
+  - Print a Triangle Number Pattern  
+  - Print a Palindromic Pattern  
+  - Print a Zig-Zag Pattern  
 
-### 2. সংখ্যা সম্পর্কিত বিষয়
-- **2.1**: Binary Number System
-- **2.2**: কিভাবে একটি সংখ্যা রিভার্স করতে হয় 
-- **2.3**: প্রাইম এবং আর্মস্ট্রং সংখ্যা পরীক্ষা
+---
 
-### 3. ফাংশন (Functions)
-- **3.1**: Functions in Dart
-- **3.2**: Functions Challenges
-- **3.3**: Functions নিয়ে অ্যাডভান্স প্রশ্ন
+### 2. Number-related Topics  
+  - Convert Decimal to Binary  
+  - Convert Binary to Decimal  
+  - Reverse a Number  
+  - Check if a Number is Prime  
+  - Check if a Number is Armstrong  
+  - Find GCD and LCM of Two Numbers  
+  - Count the Number of Digits in a Number  
+  - Sum of Digits of a Number  
 
-### 4. টাইম কমপ্লেক্সিটি
-- **4.1**: টাইম কমপ্লেক্সিটি বোঝা 
-- **4.2**: ডার্ট এ উদাহরণ
+---
 
-### 5. অ্যারে (Arrays)
-- **5.1**: Dart এ অ্যারে পরিচিতি
-- **5.2**: লিনিয়ার এবং বাইনারি সার্চ
-  - **5.3.1**: সিলেকশন সর্ট
-  - **5.3.2**: বাবল সর্ট
-  - **5.3.3**: ইনসার্শন সর্ট
-- **5.4**: অ্যারে চ্যালেঞ্জ
-- **5.5**: টপ কোম্পানির প্রশ্ন
-- **5.6**: সাবঅ্যারে চ্যালেঞ্জ
+### 3. Functions  
+  - Create a Function to Find Factorial  
+  - Create a Function to Find the nth Fibonacci Number  
+  - Check if a Number is Even or Odd using a Function  
+  - Implement a Function to Find the Greatest of Three Numbers  
+  - Write a Function to Swap Two Numbers Without a Temporary Variable  
+  - Implement a Function to Reverse a String  
 
-### 6. 2D অ্যারে
-- **6.1**: 2D অ্যারে পরিচিতি
-- **6.2**: 2D অ্যারে চ্যালেঞ্জ
+---
 
-### 7. ক্যারেক্টার অ্যারে এবং পয়েন্টার
-- **7.1**: ক্যারেক্টার অ্যারে
-- **7.2**: পয়েন্টার এবং স্ট্যাক ও হিপ
+### 4. Time Complexity  
+  - Analyze Time Complexity of Bubble Sort  
+  - Analyze Time Complexity of Binary Search  
+  - Analyze Time Complexity of Recursive Factorial Function  
+  - Compare Time Complexity of Different Sorting Algorithms  
+  - Optimize Code to Reduce Time Complexity  
 
-### 8. স্ট্রিং (Strings)
-- **8.1**: স্ট্রিংস পরিচিতি
-- **8.2**: স্ট্রিংস চ্যালেঞ্জ
+---
 
-### 9. বিট ম্যানিপুলেশন
-- **9.1**: বিট ম্যানিপুলেশন ১১ মিনিটে
-- **9.2**: বিট ম্যানিপুলেশন চ্যালেঞ্জ
+### 5. Arrays  
+  - Find the Largest Element in an Array  
+  - Find the Second Largest Element in an Array  
+  - Find the Missing Number in an Array  
+  - Check if an Array is Sorted  
+  - Rotate an Array by k Positions  
+  - Find the Union and Intersection of Two Arrays  
+  - Find the Subarray with Maximum Sum (Kadane's Algorithm)  
 
-### 10. রিকার্শন (Recursion)
-- **10.1**: রিকার্শনের পরিচিতি
-- **10.2**: রিকার্শন চ্যালেঞ্জ
-- **10.3**: রিকার্শন নিয়ে ৭টি বেস্ট প্রবলেম
-- **10.4**: অ্যাডভান্স রিকার্শন প্রশ্ন
+---
 
-### 11. ব্যাকট্র্যাকিং
-- **11.1**: র‍্যাট ইন আ মেজ
-- **11.2**: এন-কুইন প্রবলেম
+### 6. 2D Arrays  
+  - Print a 2D Array in Row-Wise and Column-Wise Order  
+  - Find the Transpose of a Matrix  
+  - Rotate a 2D Matrix by 90°  
+  - Find the Sum of Diagonal Elements in a Matrix  
+  - Spiral Traversal of a Matrix  
 
-### 12. সর্টিং অ্যালগরিদম
-- **12.1**: মার্জ সর্ট
-- **12.2**: কুইক সর্ট
+---
 
-### 13. ভেক্টর এবং পেয়ার (Vectors and Pair)
-- **13.1**: ভেক্টর এবং পেয়ার নিয়ে আলোচনা
-- **13.2**: কাউন্ট সর্ট
-- **13.3**: ডিএনএফ সর্ট
+### 7. Character Arrays and Pointers  
+  - Reverse a Character Array  
+  - Convert Lowercase Letters to Uppercase in a Character Array  
+  - Find the Length of a Character Array Without Using Built-in Functions  
+  - Swap Two Pointers Without Using a Third Variable  
+  - Find the Address of Each Character in a Character Array  
 
-### 14. অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং (OOP)
-- **14.1**: অবজেক্ট ওরিয়েন্টেড প্রোগ্রামিং ধারণা
-- **14.2**: ইনহেরিটেন্স
-- **14.3**: পলিমরফিজম
+---
 
-### 15. লিংকড লিস্ট (Linked List)
-- **15.1**: লিংকড লিস্ট পরিচিতি
-- **15.2**: লিংকড লিস্টে ডিলিশন
-- **15.3**: লিংকড লিস্ট রিভার্স করা
-- **15.4**: কেব্লক রিভার্স লিংকড লিস্ট
-- **15.5**: লিংকড লিস্টে সাইকেল ডিটেকশন
+### 8. Strings  
+  - Reverse a String Without Using Extra Space  
+  - Check if a String is a Palindrome  
+  - Count the Number of Vowels and Consonants in a String  
+  - Find the First Non-Repeating Character in a String  
+  - Implement String Compression  
 
-### 16. স্ট্যাক এবং কিউ (Stack & Queue)
-- **16.1**: স্ট্যাক ডাটা স্ট্রাকচার
-- **16.2**: স্ট্যাকের ব্যবহার
-- **16.3**: কিউ ডাটা স্ট্রাকচার
-- **16.4**: কিউ ব্যবহার
+---
 
-### 17. গ্রাফ (Graph)
-- **17.1**: গ্রাফ পরিচিতি
-- **17.2**: গ্রাফের প্রকারভেদ
-- **17.3**: গ্রাফ ট্রাভার্সাল (DFS, BFS)
-- **17.4**: Shortest Path অ্যালগরিদম (Dijkstra, Bellman-Ford)
-- **17.5**: Minimum Spanning Tree (Kruskal's, Prim's)
+### 9. Bit Manipulation  
+  - Find the Only Non-Repeating Element in an Array (XOR Method)  
+  - Check if a Number is a Power of 2  
+  - Count the Number of Set Bits in an Integer  
+  - Swap Two Numbers Using Bitwise Operators  
+  - Toggle the kth Bit of a Number  
 
-### 18. হ্যাশিং (Hashing)
-- **18.1**: হ্যাশিংয়ের ধারণা
-- **18.2**: হ্যাশ টেবিল
-- **18.3**: কোলিশন হ্যান্ডলিং (Chaining, Open Addressing)
-- **18.4**: প্রফেশনাল হ্যাশ ফাংশন এবং তাদের প্রয়োগ
+---
 
-### 19. ট্রি (Tree)
-- **19.1**: বেসিক ট্রি ধারণা
-- **19.2**: বাইনারি ট্রি এবং বাইনারি সার্চ ট্রি
-- **19.3**: AVL ট্রি এবং Red-Black ট্রি
-- **19.4**: Heap (Max-Heap, Min-Heap)
-- **19.5**: Trie
+### 10. Recursion  
+  - Find Factorial of a Number Using Recursion  
+  - Print Fibonacci Sequence Using Recursion  
+  - Solve Tower of Hanoi Using Recursion  
+  - Find Sum of Digits of a Number Using Recursion  
+  - Reverse a String Using Recursion  
 
-### 20. ডাইনামিক প্রোগ্রামিং (Dynamic Programming)
-- **20.1**: ডাইনামিক প্রোগ্রামিং পরিচিতি
-- **20.2**: মেমোইজেশন
-- **20.3**: টেবিল ভিত্তিক ডাইনামিক প্রোগ্রামিং
-- **20.4**: বিখ্যাত সমস্যা (Fibonacci Sequence, Knapsack Problem, Longest Common Subsequence)
+---
 
-### 21. গ্রিড প্রোবলেমস (Grid Problems)
-- **21.1**: গ্রিডে ট্রাভার্সাল (DFS, BFS)
-- **21.2**: Shortest Path in a Grid
-- **21.3**: মিনিমাম সুম পাথ
+### 11. Backtracking  
+  - Solve the Rat in a Maze Problem  
+  - Solve the N-Queens Problem  
+  - Find All Permutations of a Given String  
+  - Solve the Sudoku Solver Problem  
+  - Print All Subsets of a Given Set  
 
-### 22. বিট ট্রি (Binary Indexed Tree)
-- **22.1**: BIT (Fenwick Tree) পরিচিতি
-- **22.2**: BIT এর ব্যবহার
+---
 
-### 23. সেগমেন্ট ট্রি (Segment Tree)
-- **23.1**: সেগমেন্ট ট্রি পরিচিতি
-- **23.2**: সেগমেন্ট ট্রি ব্যবহার
+### 12. Sorting Algorithms  
+  - Implement Merge Sort  
+  - Implement Quick Sort  
+  - Implement Selection Sort  
+  - Implement Bubble Sort  
+  - Implement Insertion Sort  
+
+---
+
+### 13. Vectors and Pairs  
+  - Sort a Vector of Pairs by the Second Element  
+  - Merge Two Sorted Vectors into One  
+  - Implement a Custom Comparator for Sorting Pairs  
+  - Find the Sum of Elements in a Vector  
+  - Remove Duplicates from a Vector  
+
+---
+
+### 14. Object-Oriented Programming (OOP)  
+  - Implement a Class for a Bank Account  
+  - Implement Inheritance with a Base and Derived Class  
+  - Demonstrate Polymorphism Using Function Overriding  
+  - Implement a Simple Calculator Using Classes and Objects  
+  - Design a Student Database System  
+
+---
+
+### 15. Linked List  
+  - Reverse a Linked List  
+  - Detect a Loop in a Linked List  
+  - Find the Middle Element of a Linked List  
+  - Delete a Node from a Linked List  
+  - Merge Two Sorted Linked Lists  
+
+---
+
+### 16. Stack and Queue  
+  - Implement a Stack Using Arrays  
+  - Implement a Queue Using Arrays  
+  - Implement a Stack Using Linked List  
+  - Implement a Queue Using Linked List  
+  - Implement a Circular Queue  
+
+---
+
+### 17. Graph  
+  - Implement Depth First Search (DFS)  
+  - Implement Breadth First Search (BFS)  
+  - Find the Shortest Path in a Graph (Dijkstra's Algorithm)  
+  - Detect a Cycle in a Graph  
+  - Find the Minimum Spanning Tree (Prim's and Kruskal's Algorithm)  
+
+---
+
+### 18. Hashing  
+  - Implement a Hash Table with Chaining  
+  - Implement Open Addressing for Collision Handling  
+  - Find the First Repeating Element in an Array Using Hashing  
+  - Count the Frequency of Elements Using a Hash Map  
+  - Implement a Custom Hash Function  
+
+---
+
+### 19. Tree  
+  - Implement Preorder, Inorder, and Postorder Traversal  
+  - Check if a Tree is a Binary Search Tree  
+  - Find the Lowest Common Ancestor of Two Nodes in a BST  
+  - Find the Height of a Binary Tree  
+  - Convert a Binary Tree to a Doubly Linked List  
+
+---
+
+### 20. Dynamic Programming (DP)  
+  - Find the nth Fibonacci Number Using DP  
+  - Solve the Knapsack Problem Using DP  
+  - Find the Longest Common Subsequence Using DP  
+  - Find the Minimum Edit Distance Between Two Strings  
+  - Find the Maximum Profit in the Rod Cutting Problem  
+
+---
+
+### 21. Grid Problems  
+  - Find the Shortest Path in a Grid Using BFS  
+  - Count the Number of Islands in a Grid  
+  - Solve the Unique Paths Problem  
+  - Solve the Minimum Sum Path Problem  
+  - Implement Flood Fill Algorithm  
+
+---
+
+### 22. Binary Indexed Tree (BIT)  
+  - Implement Fenwick Tree for Range Sum Queries  
+  - Update and Query a BIT for Range Updates  
+  - Implement a BIT for Finding Prefix Sum  
+  - Find the kth Smallest Element Using BIT  
+  - Use BIT for Counting Inversions in an Array  
+
+---
+
+### 23. Segment Tree  
+  - Build a Segment Tree for Range Sum Queries  
+  - Implement a Segment Tree for Range Minimum Queries  
+  - Implement Lazy Propagation in a Segment Tree  
+  - Update a Segment Tree with Point Updates  
+  - Find the Maximum in a Given Range Using a Segment Tree  
+
+---
 
 বন্ধুরা, এই কোর্সের প্রতিটি টপিক তোমাদের প্রোগ্রামিং দক্ষতা বাড়ানোর জন্য ডিজাইন করা হয়েছে। আশা করি তোমরা এই রিপোজিটরি থেকে শিখে মজা পাবে!

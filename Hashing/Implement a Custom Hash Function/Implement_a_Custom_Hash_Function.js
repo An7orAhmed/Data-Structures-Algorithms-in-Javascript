@@ -1,0 +1,1 @@
+// Implement a Custom Hash Function JavaScript code goes here.

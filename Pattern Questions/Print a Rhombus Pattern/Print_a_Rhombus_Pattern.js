@@ -1,0 +1,1 @@
+// Print a Rhombus Pattern JavaScript code goes here.

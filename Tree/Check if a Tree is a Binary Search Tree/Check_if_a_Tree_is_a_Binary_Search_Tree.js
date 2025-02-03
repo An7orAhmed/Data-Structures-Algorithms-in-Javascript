@@ -1,0 +1,1 @@
+// Check if a Tree is a Binary Search Tree JavaScript code goes here.

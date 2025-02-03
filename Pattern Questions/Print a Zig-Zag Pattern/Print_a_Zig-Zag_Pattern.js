@@ -1,0 +1,1 @@
+// Print a Zig-Zag Pattern JavaScript code goes here.

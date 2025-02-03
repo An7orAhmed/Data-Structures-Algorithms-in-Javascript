@@ -1,0 +1,1 @@
+// Update and Query a BIT for Range Updates JavaScript code goes here.

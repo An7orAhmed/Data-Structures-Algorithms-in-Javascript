@@ -1,0 +1,1 @@
+// Implement Lazy Propagation in a Segment Tree JavaScript code goes here.

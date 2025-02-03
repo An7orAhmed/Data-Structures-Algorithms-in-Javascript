@@ -1,0 +1,1 @@
+// Check if a Number is Prime JavaScript code goes here.

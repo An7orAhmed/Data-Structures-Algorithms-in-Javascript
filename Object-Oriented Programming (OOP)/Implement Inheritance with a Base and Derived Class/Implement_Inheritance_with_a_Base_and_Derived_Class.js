@@ -1,0 +1,1 @@
+// Implement Inheritance with a Base and Derived Class JavaScript code goes here.

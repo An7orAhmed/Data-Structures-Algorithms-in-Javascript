@@ -1,0 +1,1 @@
+// Print a Triangle Number Pattern JavaScript code goes here.

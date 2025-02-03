@@ -1,0 +1,1 @@
+// Print a Hollow Rectangle Pattern JavaScript code goes here.

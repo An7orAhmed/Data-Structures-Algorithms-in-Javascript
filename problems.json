@@ -1,0 +1,174 @@
+{
+  "Pattern Questions": [
+    "Print a Rectangle Pattern",
+    "Print a Hollow Rectangle Pattern",
+    "Print an Inverted Half Pyramid",
+    "Print a Half Pyramid After 180° Rotation",
+    "Print an Inverted Number Pyramid",
+    "Print a 0-1 Pattern",
+    "Print a Rhombus Pattern",
+    "Print a Triangle Number Pattern",
+    "Print a Palindromic Pattern",
+    "Print a Zig-Zag Pattern"
+  ],
+  "Number-related Topics": [
+    "Convert Decimal to Binary",
+    "Convert Binary to Decimal",
+    "Reverse a Number",
+    "Check if a Number is Prime",
+    "Check if a Number is Armstrong",
+    "Find GCD and LCM of Two Numbers",
+    "Count the Number of Digits in a Number",
+    "Sum of Digits of a Number"
+  ],
+  "Functions": [
+    "Create a Function to Find Factorial",
+    "Create a Function to Find the nth Fibonacci Number",
+    "Check if a Number is Even or Odd using a Function",
+    "Implement a Function to Find the Greatest of Three Numbers",
+    "Write a Function to Swap Two Numbers Without a Temporary Variable",
+    "Implement a Function to Reverse a String"
+  ],
+  "Time Complexity": [
+    "Analyze Time Complexity of Bubble Sort",
+    "Analyze Time Complexity of Binary Search",
+    "Analyze Time Complexity of Recursive Factorial Function",
+    "Compare Time Complexity of Different Sorting Algorithms",
+    "Optimize Code to Reduce Time Complexity"
+  ],
+  "Arrays": [
+    "Find the Largest Element in an Array",
+    "Find the Second Largest Element in an Array",
+    "Find the Missing Number in an Array",
+    "Check if an Array is Sorted",
+    "Rotate an Array by k Positions",
+    "Find the Union and Intersection of Two Arrays",
+    "Find the Subarray with Maximum Sum (Kadane’s Algorithm)"
+  ],
+  "2D Arrays": [
+    "Print a 2D Array in Row-Wise and Column-Wise Order",
+    "Find the Transpose of a Matrix",
+    "Rotate a 2D Matrix by 90°",
+    "Find the Sum of Diagonal Elements in a Matrix",
+    "Spiral Traversal of a Matrix"
+  ],
+  "Character Arrays and Pointers": [
+    "Reverse a Character Array",
+    "Convert Lowercase Letters to Uppercase in a Character Array",
+    "Find the Length of a Character Array Without Using Built-in Functions",
+    "Swap Two Pointers Without Using a Third Variable",
+    "Find the Address of Each Character in a Character Array"
+  ],
+  "Strings": [
+    "Reverse a String Without Using Extra Space",
+    "Check if a String is a Palindrome",
+    "Count the Number of Vowels and Consonants in a String",
+    "Find the First Non-Repeating Character in a String",
+    "Implement String Compression"
+  ],
+  "Bit Manipulation": [
+    "Find the Only Non-Repeating Element in an Array (XOR Method)",
+    "Check if a Number is a Power of 2",
+    "Count the Number of Set Bits in an Integer",
+    "Swap Two Numbers Using Bitwise Operators",
+    "Toggle the kth Bit of a Number"
+  ],
+  "Recursion": [
+    "Find Factorial of a Number Using Recursion",
+    "Print Fibonacci Sequence Using Recursion",
+    "Solve Tower of Hanoi Using Recursion",
+    "Find Sum of Digits of a Number Using Recursion",
+    "Reverse a String Using Recursion"
+  ],
+  "Backtracking": [
+    "Solve the Rat in a Maze Problem",
+    "Solve the N-Queens Problem",
+    "Find All Permutations of a Given String",
+    "Solve the Sudoku Solver Problem",
+    "Print All Subsets of a Given Set"
+  ],
+  "Sorting Algorithms": [
+    "Implement Merge Sort",
+    "Implement Quick Sort",
+    "Implement Selection Sort",
+    "Implement Bubble Sort",
+    "Implement Insertion Sort"
+  ],
+  "Vectors and Pairs": [
+    "Sort a Vector of Pairs by the Second Element",
+    "Merge Two Sorted Vectors into One",
+    "Implement a Custom Comparator for Sorting Pairs",
+    "Find the Sum of Elements in a Vector",
+    "Remove Duplicates from a Vector"
+  ],
+  "Object-Oriented Programming (OOP)": [
+    "Implement a Class for a Bank Account",
+    "Implement Inheritance with a Base and Derived Class",
+    "Demonstrate Polymorphism Using Function Overriding",
+    "Implement a Simple Calculator Using Classes and Objects",
+    "Design a Student Database System"
+  ],
+  "Linked List": [
+    "Reverse a Linked List",
+    "Detect a Loop in a Linked List",
+    "Find the Middle Element of a Linked List",
+    "Delete a Node from a Linked List",
+    "Merge Two Sorted Linked Lists"
+  ],
+  "Stack and Queue": [
+    "Implement a Stack Using Arrays",
+    "Implement a Queue Using Arrays",
+    "Implement a Stack Using Linked List",
+    "Implement a Queue Using Linked List",
+    "Implement a Circular Queue"
+  ],
+  "Graph": [
+    "Implement Depth First Search (DFS)",
+    "Implement Breadth First Search (BFS)",
+    "Find the Shortest Path in a Graph (Dijkstra's Algorithm)",
+    "Detect a Cycle in a Graph",
+    "Find the Minimum Spanning Tree (Prim's and Kruskal's Algorithm)"
+  ],
+  "Hashing": [
+    "Implement a Hash Table with Chaining",
+    "Implement Open Addressing for Collision Handling",
+    "Find the First Repeating Element in an Array Using Hashing",
+    "Count the Frequency of Elements Using a Hash Map",
+    "Implement a Custom Hash Function"
+  ],
+  "Tree": [
+    "Implement Preorder, Inorder, and Postorder Traversal",
+    "Check if a Tree is a Binary Search Tree",
+    "Find the Lowest Common Ancestor of Two Nodes in a BST",
+    "Find the Height of a Binary Tree",
+    "Convert a Binary Tree to a Doubly Linked List"
+  ],
+  "Dynamic Programming (DP)": [
+    "Find the nth Fibonacci Number Using DP",
+    "Solve the Knapsack Problem Using DP",
+    "Find the Longest Common Subsequence Using DP",
+    "Find the Minimum Edit Distance Between Two Strings",
+    "Find the Maximum Profit in the Rod Cutting Problem"
+  ],
+  "Grid Problems": [
+    "Find the Shortest Path in a Grid Using BFS",
+    "Count the Number of Islands in a Grid",
+    "Solve the Unique Paths Problem",
+    "Solve the Minimum Sum Path Problem",
+    "Implement Flood Fill Algorithm"
+  ],
+  "Binary Indexed Tree (BIT)": [
+    "Implement Fenwick Tree for Range Sum Queries",
+    "Update and Query a BIT for Range Updates",
+    "Implement a BIT for Finding Prefix Sum",
+    "Find the kth Smallest Element Using BIT",
+    "Use BIT for Counting Inversions in an Array"
+  ],
+  "Segment Tree": [
+    "Build a Segment Tree for Range Sum Queries",
+    "Implement a Segment Tree for Range Minimum Queries",
+    "Implement Lazy Propagation in a Segment Tree",
+    "Update a Segment Tree with Point Updates",
+    "Find the Maximum in a Given Range Using a Segment Tree"
+  ]
+}
