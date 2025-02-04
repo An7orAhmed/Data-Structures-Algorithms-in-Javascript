@@ -1,11 +1,11 @@
-function findFirstRepeatingElement(array) {
-    const seen = {};
-    for (let i = 0; i < array.length; i++) {
-        if (seen[array[i]]) {
-            return array[i];
+function firstRepeatingElement(arr) {
+    const seen = {}; // Hash map to track seen elements
+    for (let i = 0; i < arr.length; i++) {
+        if (seen[arr[i]]) {
+            return arr[i]; // Found the first repeating element
         } else {
-            seen[array[i]] = true;
+            seen[arr[i]] = true; // Mark element as seen
         }
     }
-    return null;
+    return undefined; // No repeating element found
 }

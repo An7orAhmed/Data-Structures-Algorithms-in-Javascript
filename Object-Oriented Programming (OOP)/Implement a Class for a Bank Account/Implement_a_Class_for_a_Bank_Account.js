@@ -1,1 +1,0 @@
-// Implement a Class for a Bank Account JavaScript code goes here.

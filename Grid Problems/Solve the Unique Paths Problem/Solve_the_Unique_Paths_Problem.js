@@ -1,14 +1,18 @@
-function uniquePaths(rows, cols) {
-    // Create a DP table initialized with 1s
-    let dp = Array(rows).fill().map(() => Array(cols).fill(1));
+function uniquePaths(m, n) {
+    let dp = new Array(m).fill(0).map(() => new Array(n).fill(0));
     
-    // Fill DP table
-    for (let i = 1; i < rows; i++) {
-        for (let j = 1; j < cols; j++) {
+    for(let i = 0; i < m; i++) {
+        dp[i][0] = 1;
+    }
+    for(let j = 0; j < n; j++) {
+        dp[0][j] = 1;
+    }
+    
+    for(let i = 1; i < m; i++) {
+        for(let j = 1; j < n; j++) {
             dp[i][j] = dp[i-1][j] + dp[i][j-1];
         }
     }
     
-    return dp[rows-1][cols-1];
+    return dp[m-1][n-1];
 }
-

@@ -1,26 +1,22 @@
-Function bfs() JavaScript e implement kora hoyece. Ato a rokom write korbo:
-
 function bfs(graph, start) {
-  const visited = new Array(Object.keys(graph).length).fill(false);
-  const queue = [];
-  let result = [];
+    const visited = {};
+    const queue = [];
+    const result = [];
 
-  queue.push(start);
-  visited[start] = true;
+    queue.push(start);
+    visited[start] = true;
 
-  while (queue.length > 0) {
-    const node = queue.shift(); // Dequeue operation
-    result.push(node);
+    while (queue.length > 0) {
+        const node = queue.shift();
+        result.push(node);
 
-    const neighbors = graph[node];
-    for (const neighbor of neighbors) {
-      if (!visited[neighbor]) {
-        visited[neighbor] = true;
-        queue.push(neighbor); // Enqueue operation
-      }
+        for (const neighbor of graph[node]) {
+            if (!visited[neighbor]) {
+                visited[neighbor] = true;
+                queue.push(neighbor);
+            }
+        }
     }
-  }
 
-  return result;
+    return result;
 }
-

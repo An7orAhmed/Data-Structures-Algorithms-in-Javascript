@@ -1,1 +1,9 @@
-function greatest(a, b, c) => a > b && a > c ? a : b > c ? b : c;
+function greatestOfThree(a, b, c) {
+    if (a > b && a > c) {
+        return a;
+    } else if (b > c) {
+        return b;
+    } else {
+        return c;
+    }
+}

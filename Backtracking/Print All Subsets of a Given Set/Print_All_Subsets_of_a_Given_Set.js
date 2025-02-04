@@ -1,14 +1,20 @@
-function printAllSubsets(set) {
-    const n = set.length;
-    const total = Math.pow(2, n);
-    
-    for (let i = 0; i < total; i++) {
+function printAllSubsets(arr) {
+    const n = arr.length;
+    const totalSubsets = Math.pow(2, n);
+
+    for (let i = 0; i < totalSubsets; i++) {
         let subset = [];
+        let binary = i.toString(2).padStart(n, '0');
+
         for (let j = 0; j < n; j++) {
-            if (i & (1 << j)) {
-                subset.push(set[j]);
+            if (binary[j] === '1') {
+                subset.push(arr[j]);
             }
         }
-        console.log(subset);
+
+        console.log(`Subset ${i + 1}: ${subset.join(', ')}`);
     }
 }
+
+// Example usage:
+printAllSubsets([1, 2, 3]);

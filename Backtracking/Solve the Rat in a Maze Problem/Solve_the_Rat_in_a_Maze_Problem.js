@@ -1,27 +1,41 @@
-
-function moveRat(maze, currentRow, currentCol, path) {
-    const n = maze.length;
-    if (currentRow === n - 1 && currentCol === n - 1) {
-        return true;
-    }
+function solveRatInMaze(maze, n) {
+    // Queue to hold current position and path
+    let queue = [];
+    queue.push({ coords: [0, 0], path: [[0, 0]] });
+    
     // Directions: up, down, left, right
     const directions = [[-1, 0], [1, 0], [0, -1], [0, 1]];
-    for (let [dr, dc] of directions) {
-        let newRow = currentRow + dr;
-        let newCol = currentCol + dc;
-        if (isValid(maze, newRow, newCol) && !path.includes(`${newRow},${newCol}`)) {
-            path.push(`${newRow},${newCol}`);
-            if (moveRat(maze, newRow, newCol, path)) {
-                return true;
+    
+    // Visited set to keep track of visited positions
+    let visited = new Set();
+    visited.add('0,0');
+    
+    while (queue.length > 0) {
+        let current = queue.shift();
+        
+        // Check if current position is the destination
+        if (current.coords[0] === n-1 && current.coords[1] === n-1) {
+            return current.path;
+        }
+        
+        // Explore all possible directions
+        for (let dir of directions) {
+            let newX = current.coords[0] + dir[0];
+            let newY = current.coords[1] + dir[1];
+            
+            // Check if new position is valid
+            if (newX >= 0 && newX < n && newY >= 0 && newY < n && maze[newX][newY] === 0) {
+                let key = `${newX},${newY}`;
+                if (!visited.has(key)) {
+                    visited.add(key);
+                    let newPath = current.path.slice();
+                    newPath.push([newX, newY]);
+                    queue.push({ coords: [newX, newY], path: newPath });
+                }
             }
-            path.pop();
         }
     }
-    return false;
+    
+    // If no path found
+    return null;
 }
-
-function isValid(maze, row, col) {
-    const n = maze.length;
-    return row >= 0 && row < n && col >= 0 && col < n && maze[row][col] === 0;
-}
-

@@ -1,44 +1,36 @@
+function solveNQueens(n) {
+  const board = Array(n).fill(-1);
+  const solutions = [];
 
-function isSafe(queens, row, col, n) {
-    for(let i = 0; i < row; i++) {
-        if(queens[i] === col || queens[i] - i === col - row || queens[i] + i === col + row) {
-            return false;
-        }
+  function isSafe(row, col) {
+    for (let i = 0; i < row; i++) {
+      if (board[i] === col || 
+          board[i] - i === col - row || 
+          board[i] + i === col + row) {
+        return false;
+      }
     }
     return true;
-}
+  }
 
-function solveNQueens(queens, row, n, solutions) {
-    if(row === n) {
-        solutions.push([...queens]);
-        return true;
+  function placeQueen(row) {
+    if (row === n) {
+      solutions.push([...board]);
+      return true;
     }
-    for(let col = 0; col < n; col++) {
-        if(isSafe(queens, row, col, n)) {
-            queens[row] = col;
-            if(solveNQueens(queens, row + 1, n, solutions)) {
-                return true;
-            }
-            queens[row] = -1;
+
+    for (let col = 0; col < n; col++) {
+      if (isSafe(row, col)) {
+        board[row] = col;
+        if (placeQueen(row + 1)) {
+          return true;
         }
+        board[row] = -1;
+      }
     }
     return false;
-}
+  }
 
-function solve(q) {
-    const n = q;
-    const queens = new Array(n).fill(-1);
-    const solutions = [];
-    solveNQueens(queens, 0, n, solutions);
-    return solutions.map(sol => {
-        const board = [];
-        for(let row of sol) {
-            const r = [];
-            for(let i = 0; i < n; i++) {
-                r.push(row === i ? 'Q' : '.');
-            }
-            board.push(r.join(''));
-        }
-        return board;
-    });
+  placeQueen(0);
+  return solutions.length ? solutions[0] : null;
 }

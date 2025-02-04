@@ -1,10 +1,11 @@
-function isArmstrong(num) {
-    const digits = num.toString();
-    const power = digits.length;
+function isArmstrong(number) {
+    const digits = String(number).length;
     let sum = 0;
-    for (let i = 0; i < power; i++) {
-        const digit = parseInt(digits[i], 10);
-        sum += Math.pow(digit, power);
+    for(let i = 0; i < digits; i++) {
+        const digit = number % 10;
+        sum += Math.pow(digit, digits);
+        number = Math.floor(number / 10);
     }
-    return sum === num;
+    return sum === number;
 }
+console.log(isArmstrong(153)); // Output: true

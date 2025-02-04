@@ -1,40 +1,45 @@
-function Implement_Flood_Fill(canvasContext, startX, startY, oldColor, newColor) {
-  if (oldColor === newColor) return;
-  let queue = [];
-  let width = canvasContext.canvas.width;
-  let height = canvasContext.canvas.height;
-
-  function floodFill(x, y) {
-    if (x < 0 || x >= width || y < 0 || y >= height) return;
-    let currentColor = canvasContext.getImageData(x, y, 1, 1).data;
-    if (rgbaToString(currentColor) !== oldColor) return;
-
-    queue.push({ x: x, y: y });
-
-    while (queue.length > 0) {
-      let currentPoint = queue.shift();
-      let x = currentPoint.x;
-      let y = currentPoint.y;
-
-      if (x < 0 || x >= width || y < 0 || y >= height) continue;
-      if (rgbaToString(canvasContext.getImageData(x, y, 1, 1).data) !== oldColor) continue;
-
-      canvasContext.fillStyle = newColor;
-      canvasContext.fillRect(x, y, 1, 1);
-
-      queue.push({ x: x + 1, y: y });
-      queue.push({ x: x - 1, y: y });
-      queue.push({ x: x, y: y + 1 });
-      queue.push({ x: x, y: y - 1 });
+function floodFill(grid, row, col, newRowColor, originalColor) {
+    if (grid[row][col] === newRowColor) {
+        return grid;
     }
-  }
-
-  function rgbaToString(rgba) {
-    return `rgba(${rgba[0]},${rgba[1]},${rgba[2]},${rgba[3]})`;
-  }
-
-  let startColor = rgbaToString(canvasContext.getImageData(startX, startY, 1, 1).data);
-  if (startColor === oldColor) {
-    floodFill(startX, startY);
-  }
+    
+    let queue = [];
+    grid[row][col] = newRowColor;
+    queue.push({row, col});
+    
+    while (queue.length > 0) {
+        let curr = queue.shift();
+        let currentRow = curr.row;
+        let currentCol = curr.col;
+        
+        // Check all four directions
+        if(currentRow-1 >= 0 && grid[currentRow - 1][currentCol] === originalColor) {
+            grid[currentRow - 1][currentCol] = newRowColor;
+            queue.push({row: currentRow - 1, col: currentCol});
+        }
+        if(currentRow + 1 < grid.length && grid[currentRow + 1][currentCol] === originalColor) {
+            grid[currentRow + 1][currentCol] = newRowColor;
+            queue.push({row: currentRow + 1, col: currentCol});
+        }
+        if(currentCol - 1 >= 0 && grid[currentRow][currentCol - 1] === originalColor) {
+            grid[currentRow][currentCol - 1] = newRowColor;
+            queue.push({row: currentRow, col: currentCol - 1});
+        }
+        if(currentCol + 1 < grid[0].length && grid[currentRow][currentCol + 1] === originalColor) {
+            grid[currentRow][currentCol + 1] = newRowColor;
+            queue.push({row: currentRow, col: currentCol + 1});
+        }
+    }
+    return grid;
 }
+
+// Usage example:
+let grid = [
+    ['B','B','B','B'], 
+    ['B','A','A','B'], 
+    ['B','A','A','B'], 
+    ['B','B','B','B']
+];
+        
+let newGrid = floodFill(grid,1,1,"R","A");
+console.log(newGrid);

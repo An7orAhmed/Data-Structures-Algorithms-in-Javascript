@@ -1,29 +1,33 @@
 class FenwickTree {
-  constructor(data) {
-      this.n = data.length;
-      this.tree = new Array(this.n + 1).fill(0);
-      for (let i = 1; i <= this.n; i++) {
-          this.update(i, data[i - 1]);
-      }
-  }
+    constructor(size) {
+        this.n = size;
+        this.tree = new Array(this.n + 1).fill(0);
+    }
 
-  update(index, value) {
-      while (index <= this.n) {
-          this.tree[index] += value;
-          index += index & -index;
-      }
-  }
+    update(index, value) {
+        // Update the Fenwick Tree at the given index
+        while (index <= this.n) {
+            this.tree[index] += value;
+            index += index & -index;
+        }
+    }
 
-  prefixSum(index) {
-      let sum = 0;
-      while (index > 0) {
-          sum += this.tree[index];
-          index -= index & -index;
-      }
-      return sum;
-  }
+    getSum(index) {
+        // Calculate the prefix sum up to the given index
+        let sum = 0;
+        while (index > 0) {
+            sum += this.tree[index];
+            index -= index & -index;
+        }
+        return sum;
+    }
+}
 
-  rangeSum(l, r) {
-      return this.prefixSum(r) - this.prefixSum(l - 1);
-  }
+function rangeSumQuery(tree, start, end) {
+    // Calculate the sum from index 'start' to 'end'
+    if (start === 1) {
+        return tree.getSum(end);
+    } else {
+        return tree.getSum(end) - tree.getSum(start - 1);
+    }
 }
