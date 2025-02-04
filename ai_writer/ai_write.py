@@ -1,46 +1,45 @@
 import os
-import requests
-import json
 from dotenv import load_dotenv
+from openai import OpenAI
 
 load_dotenv()
 
-API_URL = os.getenv("OPENROUTER_API_URL")
-API_KEY = os.getenv("OPENROUTER_API_KEY")
-MODEL = "deepseek/deepseek-r1:free"
 TARGET_FOLDER = "../"  # Specify the folder to look into
+
+client = OpenAI(
+	base_url = os.getenv("HUGGINGFACE_API_URL"),
+	api_key = os.getenv("HUGGINGFACE_API_KEY")
+)
 
 # Function to generate AI response based on the program title
 def generate_ai_response(program_title):
     print(f"Requesting to AI for {program_title}...")
-    response = requests.post(
-        url=API_URL + "/chat/completions",
-        headers={
-            "Authorization": "Bearer " + API_KEY,
-        },
-        data=json.dumps({
-            "model": MODEL,
-            "messages": [
-                {
-                  "role": "user", 
-                  "content": f'''
-                  Write the JavaScript code for {program_title} 
-                  and explain it in Bangla like a friendly tutorial article by Antor Ahmed. 
-                  Split the code and explanation with --$END$--.
-                  before code, write nothing and don't use code block.
-                  example output: 
-                    function add(a, b) => a + b;
-                    --$END$--
-                    explanation in Bangla
-                  '''
-                }
-            ]
-        })
-    )
-    print(f"--- Response received: {program_title} ---")
+
+    messages = [
+        {
+          "role": "user", 
+          "content": f'''
+          Write the JavaScript code for {program_title} 
+          and explain it in Bangla like a friendly tutorial article by Antor Ahmed. 
+          Split the code and explanation with --$END$--.
+          before code, write nothing and don't use code block.
+          example output: 
+            function add(a, b) => a + b;
+            --$END$--
+            explanation in Bangla
+          '''
+        }
+    ]
+
     try:
-      response = response.json()['choices'][0]['message']['content']
-      return response
+      completion = client.chat.completions.create(
+        model=os.getenv("HUGGINGFACE_MODEL"), 
+        messages=messages, 
+        max_tokens=500
+      )
+
+      print(f"--- Response received: {program_title} ---")
+      return completion.choices[0].message.content
     except Exception as e:
       print(f"Error: {e}, Retrying for {program_title}...")
       generate_ai_response(program_title)  

@@ -1,3 +1,4 @@
-# Find All Permutations of a Given String
+# Find_All_Permutations_of_a_Given_String
 
-Detailed explanation and code for Find All Permutations of a Given String.
+**Author**: Antor Ahmed
+
