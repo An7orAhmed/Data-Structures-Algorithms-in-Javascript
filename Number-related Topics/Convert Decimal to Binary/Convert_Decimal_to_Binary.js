@@ -1,1 +1,1 @@
-// Convert Decimal to Binary JavaScript code goes here.
+const decimalToBinary = (num) => num.toString(2);

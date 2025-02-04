@@ -1,3 +1,12 @@
-# Find the Shortest Path in a Graph (Dijkstra's Algorithm)
+# Find_the_Shortest_Path_in_a_Graph_(Dijkstra's_Algorithm)
 
-Detailed explanation and code for Find the Shortest Path in a Graph (Dijkstra's Algorithm).
+**Author**: Antor Ahmed
+
+
+```
+
+বাংলায় ব্যাখ্যা:
+
+আস্সালামু আলাইকুম! আজ আমরা জাভাস্ক্রিপ্টে দেখব কিভাবে ডিজক্সট্রা অ্যালগরিদম ব্যবহার করে একটি গ্রাফে সবচেয়ে ছোট পথ খুঁজে পাব। আমি আন্তর আহমেদ, এবং আপনাদের জন্য এই সহজ টিউটোরিয়াল নিয়ে এসেছি।
+
+১. প্রথমে, আমাদের একটি গ্রাফ দরকার। গ্রাফটি আমরা একটি অ্যাডজেসেন্ট ম্যাট্রিক্স হিসাবে উপস্থাপন করব। প্রতিটি নোডের সাথে অন্য ন

@@ -1,1 +1,7 @@
-// Count the Number of Digits in a Number JavaScript code goes here.
+
+function countDigits(number) {
+    if (number === 0) return 1;
+    const numStr = Math.abs(number).toString();
+    return numStr.length;
+}
+

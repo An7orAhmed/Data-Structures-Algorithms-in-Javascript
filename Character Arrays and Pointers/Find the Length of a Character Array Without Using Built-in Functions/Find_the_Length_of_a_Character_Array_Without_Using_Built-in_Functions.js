@@ -1,1 +1,8 @@
-// Find the Length of a Character Array Without Using Built-in Functions JavaScript code goes here.
+function characterArrayLength(arr) {
+    let counter = 0;
+    while (arr[counter] !== undefined) {
+        counter++;
+    }
+    return counter;
+}
+

@@ -1,1 +1,8 @@
-// Check if a Number is Even or Odd using a Function JavaScript code goes here.
+function checkEvenOdd(number) {
+    if (number % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+

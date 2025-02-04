@@ -24,7 +24,6 @@ def generate_ai_response(program_title):
             Write the JavaScript code for {program_title} 
             and explain it in Bangla like a friendly tutorial article by Antor Ahmed. 
             Split the code and explanation with --$END$--.
-            before code, write nothing and don't use code block.
             example output: 
               function add(a, b) => a + b;
               --$END$--
@@ -66,7 +65,8 @@ def process_subfolders(base_dir):
               js_file_path = os.path.join(root, js_file)
               with open(js_file_path, 'w', encoding='utf-8') as js_f:
                   code_part = ai_response.split('--$END$--', 1)[0]
-                  js_f.write(code_part)
+                  cleaned_code = code_part.split("```javascript")[1].split("```")[0].strip()
+                  js_f.write(cleaned_code)
 
               # Write explanation to the .md file
               readme_file_path = os.path.join(root, 'readme.md')

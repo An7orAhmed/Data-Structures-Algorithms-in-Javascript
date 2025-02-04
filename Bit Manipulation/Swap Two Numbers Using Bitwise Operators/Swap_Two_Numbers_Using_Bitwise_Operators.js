@@ -1,1 +1,6 @@
-// Swap Two Numbers Using Bitwise Operators JavaScript code goes here.
+function swap(a, b) {
+    a = a ^ b;
+    b = a ^ b;
+    a = a ^ b;
+    return [a, b];
+}

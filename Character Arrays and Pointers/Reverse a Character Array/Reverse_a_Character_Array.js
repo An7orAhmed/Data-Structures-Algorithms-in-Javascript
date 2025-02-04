@@ -1,1 +1,3 @@
-// Reverse a Character Array JavaScript code goes here.
+function reverseCharacterArray(inputArray) {
+    return inputArray.reverse();
+}

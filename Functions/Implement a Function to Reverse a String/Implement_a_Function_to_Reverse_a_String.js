@@ -1,1 +1,3 @@
-// Implement a Function to Reverse a String JavaScript code goes here.
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}

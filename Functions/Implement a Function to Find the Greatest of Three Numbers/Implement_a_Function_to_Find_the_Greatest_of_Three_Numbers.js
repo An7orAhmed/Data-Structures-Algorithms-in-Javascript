@@ -1,1 +1,1 @@
-// Implement a Function to Find the Greatest of Three Numbers JavaScript code goes here.
+function greatest(a, b, c) => a > b && a > c ? a : b > c ? b : c;

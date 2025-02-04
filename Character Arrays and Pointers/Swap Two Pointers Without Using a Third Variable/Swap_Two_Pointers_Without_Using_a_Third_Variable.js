@@ -1,1 +1,4 @@
-// Swap Two Pointers Without Using a Third Variable JavaScript code goes here.
+function swap(a, b) {
+    [a, b] = [b, a];
+    return { a, b };
+}

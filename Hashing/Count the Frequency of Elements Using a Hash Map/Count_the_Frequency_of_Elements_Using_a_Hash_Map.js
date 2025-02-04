@@ -1,1 +1,12 @@
-// Count the Frequency of Elements Using a Hash Map JavaScript code goes here.
+function countFrequency(array) {
+    let frequencyMap = {};
+    for (let element of array) {
+        if (frequencyMap[element]) {
+            frequencyMap[element]++;
+        } else {
+            frequencyMap[element] = 1;
+        }
+    }
+    return frequencyMap;
+}
+
